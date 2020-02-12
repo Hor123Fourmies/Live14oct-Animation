@@ -1,0 +1,68 @@
+nav {
+    background: dodgerblue;
+}
+
+nav:hover {
+    background: indianred;
+    transition: background 1.5s;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a:hover {
+    font-weight: bold;
+    font-size: 25px;
+    transition: font-size 2s;
+}
+
+ul li a:active {
+    text-transform: uppercase;
+}
+
+ul li a:link ul li a:visited {
+    color: gold;
+}
+
+#register:focus {
+    background: blue;
+    color: #fefefe;
+}
+
+a:lang(en) {
+    color: red !important;
+}
+
+.float_left {
+    background: deeppink;
+    height: 200px;
+    width: 200px;
+    border: black 1px solid;
+    margin: 5px;
+    display: inline-block;
+}
+
+#div_anim {
+    background: red;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left:0;
+    top:0;
+    animation-name: monAnimation;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    //animation-iteration-count: ;
+}
+
+@keyframes monAnimation {
+    0% {width: 150px;}
+    50% {width: 500px; background: blue; transform: rotate(90deg); border-radius: 1em}
+    100% {width: 200px}
+}
+
+#div_anim:hover {
+    transform: translate3d(150px,0,0);
+    transition: transform 1.56s;
+}
